@@ -23,7 +23,7 @@
             padding: 30px;
             width: 320px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             margin-bottom: 20px;
         }
 
@@ -39,17 +39,30 @@
             gap: 12px;
         }
 
-        input {
-            padding: 10px;
+        .inputElement {
+            padding: 6px;
             border-radius: 6px;
             border: 1.5px solid #95d5b2;
             background-color: #ffffff;
             font-size: 14px;
+            display: flex;
+            align-items: center;
         }
-        input:focus{
+
+        input {
+            width: 100%;
+            outline: none;
+            padding: 6px;
+            border-radius: 6px;
+            border: none;
+            background-color: #ffffff;
+            font-size: 14px;
+        }
+
+        .inputElement:active {
             outline: none;
             border-color: #2d6a4f;
-            box-shadow:0 0 5px #95d5b2;
+            box-shadow: 0 0 5px #95d5b2;
         }
 
 
@@ -62,7 +75,19 @@
             font-weight: bold;
             font-size: 16px;
             cursor: pointer;
-            transition:background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+        }
+
+        .imgicon {
+            width: 15px;
+            height: 15px;
+            object-fit: contain;
+        }
+
+        .eyeicon {
+            width: 15px;
+            height: 15px;
+            object-fit: contain;
         }
 
         button:hover {
@@ -70,19 +95,19 @@
         }
 
         .switch-section {
-          text-align: center;
-          color: #2d6a4f;
-          margin-top: 10px;
+            text-align: center;
+            color: #2d6a4f;
+            margin-top: 10px;
         }
 
         .switch-section button {
-           margin-top: 8px;
-           background-color: #ff91af;
-           color: white;
-           padding: 8px 14px;
-           border: none;
-           border-radius: 6px;
-           cursor: pointer;
+            margin-top: 8px;
+            background-color: #ff91af;
+            color: white;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
 
         }
 
@@ -98,8 +123,15 @@
         <div class="card" id="logincard">
             <h2>Login</h2>
             <form>
-                <input type="Email" placeholder="Email">
-                <input type="password" name="password" id="" placeholder="password">
+                <div class="inputElement">
+                    <img src="user.png" alt="" class="imgicon">
+                    <input type="Email" placeholder="Email">
+                </div>
+                <div class="inputElement">
+                    <img src="hidden.png" alt="" class="eyeicon">
+                    <input type="password" placeholder="password">
+                </div>
+
                 <button type="submit">Login</button>
             </form>
         </div>
