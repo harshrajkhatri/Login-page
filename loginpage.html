@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fffacc;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card {
+            background-color: #d8f3dc;
+            padding: 30px;
+            width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2d6a4f;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1.5px solid #95d5b2;
+            background-color: #ffffff;
+            font-size: 14px;
+        }
+        input:focus{
+            outline: none;
+            border-color: #2d6a4f;
+            box-shadow:0 0 5px #95d5b2;
+        }
+
+
+        button {
+            background-color: #ff91af;
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition:background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a83261;
+        }
+
+        .switch-section {
+          text-align: center;
+          color: #2d6a4f;
+          margin-top: 10px;
+        }
+
+        .switch-section button {
+           margin-top: 8px;
+           background-color: #ff91af;
+           color: white;
+           padding: 8px 14px;
+           border: none;
+           border-radius: 6px;
+           cursor: pointer;
+
+        }
+
+        .signup-section button:hover {
+            background-color: #a83261;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+
+        <div class="card" id="logincard">
+            <h2>Login</h2>
+            <form>
+                <input type="Email" placeholder="Email">
+                <input type="password" name="password" id="" placeholder="password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="switch-section">
+            <p>Don't have an account?</p>
+            <button onclick="window.location.href='signup.html'">Create Account</button>
+        </div>
+    </div>
+</body>
+
+</html>
